@@ -1,0 +1,46 @@
+{
+  "name": "barnowl-simatic",
+  "homepage": "https://github.com/reelyactive/barnowl-simatic/",
+  "author": {
+    "name": "reelyActive",
+    "email": "info@reelyactive.com"
+  },
+  "description": "Collect real-time location data from Siemens SIMATIC RTLS Locating Manager.  We believe in an open Internet of Things.",
+  "keywords": [
+    "reelyActive",
+    "barnowl",
+    "SIMATIC RTLS",
+    "Siemens",
+    "UWB",
+    "raddec"
+  ],
+  "version": "1.0.0",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "main": "./lib/barnowlsimatic.js",
+  "scripts": {
+    "start": "node bin/barnowl-simatic"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/reelyactive/barnowl-simatic.git"
+  },
+  "dependencies": {
+    "raddec": ">=0.6.2",
+    "repositioned": "^1.0.0"
+  },
+  "devDependencies": {},
+  "bugs": {
+    "url": "https://github.com/reelyactive/barnowl-simatic/issues"
+  },
+  "contributors": [
+    {
+      "name": "Tommy Morissette"
+    },
+    {
+      "name": "Jeffrey Dungen"
+    }
+  ],
+  "license": "MIT"
+}

@@ -1,0 +1,18 @@
+#!/usr/bin/env node
+
+const BarnowlSimatic = require('../lib/barnowlsimatic.js');
+
+const host = process.argv[2] || 'localhost';
+const port = parseInt(process.argv[3]) || 800;
+
+let barnowl = new BarnowlSimatic();
+
+barnowl.addListener(BarnowlSimatic.TcpListener, { host: host, port: port });
+
+barnowl.on('raddec', (raddec) => {
+  console.log(raddec.toFlattened());
+});
+
+barnowl.on('infrastructureMessage', (message) => {
+  console.log(message);
+});
