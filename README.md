@@ -53,7 +53,7 @@ const options = {
     reconnectMilliseconds: 5000,
     decodingOptions: {} // See Decoding Options below
 };
-barnowl.addListener(BarnowlSimatic, {}, BarnowlSimatic.TcpListener, options);
+barnowl.addListener(BarnowlSimatic.TcpListener, options);
 ```
 
 ### Test
